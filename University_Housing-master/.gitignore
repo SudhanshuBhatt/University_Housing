@@ -1,0 +1,11 @@
+*.class
+UnivHousingApp/.metadata/*
+.metadata/*
+.metadata/.plugins/*
+UnivHousingApp/bin/
+*.txt
+.metadata/.plugins/org.eclipse.core.resources/.projects/UnivHousingApp/org.eclipse.jdt.core/state.dat
+.classpath
+.project
+UnivHousingApp/.project
+UnivHousingApp/.classpath

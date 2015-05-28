@@ -1,0 +1,8 @@
+select monthly_housing_rent,monthly_parking_rent,late_fees,incidental_charges,
+invoice_no,payment_date,payment_method,lease_no,payment_status,payment_due,
+damage_charges,person_id
+from invoice_person_lease outer_table
+where person_id = ?
+and payment_date = (select max(payment_date) from invoice_person_lease inner_table
+where outer_table.person_id = inner_table.person_id
+order by payment_date desc);
